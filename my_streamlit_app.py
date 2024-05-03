@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt # type: ignore
 # definition du titre de la quête importation du jeu de données et affichage.
 st.title(" # Quête streamlit : cars")
 st.header('Table de données')
-df = pd.read_csv("cars.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/murpi/wilddata/master/quests/cars.csv")
 df['continent'] = df['continent'].str.replace('.', '')
 df
 
