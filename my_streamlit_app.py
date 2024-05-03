@@ -39,4 +39,7 @@ st.header('Evolution de la puissance des véhicules HP au fil des années')
 st.bar_chart(df_filtre, x = 'year', y = 'hp', color = 'continent')
 
 st.header('Evolution du time to 60 au fil des années')
-st.line_chart(df_filtre, x = 'year', y = 'time-to-60', color = 'continent')
+st.bar_chart(df_filtre, x = 'year', y = 'time-to-60', color = 'continent')
+
+st.header('Evolution du mpg en focntion du hp')
+st.scatter_chart(df_filtre, x = 'mpg', y = 'hp', color = 'hp')
